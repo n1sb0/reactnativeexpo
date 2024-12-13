@@ -36,6 +36,18 @@ const Home = ({ navigation }: HomePageProps) => {
           navigation.push("Details", { id: 1 });
         }}
       />
+      <Button
+        title="open Drawer"
+        onPress={() => {
+          navigation.navigate("Drawer");
+        }}
+      />
+      <Button
+        title="open Modal"
+        onPress={() => {
+          navigation.navigate("Modal");
+        }}
+      />
     </View>
   );
 };
